@@ -7,7 +7,7 @@
   font-style: normal;
 }
 
- /* -------------------------------------------Shared Styles */
+/* -------------------------------------------Shared Styles */
 .display-flex {
   display: flex;
 }
@@ -30,6 +30,14 @@
   font-size: 1.25rem;
   font-weight: 600;
   padding: 20px 24px;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 130px;
 }
 
 /* ----------------------------------------Header Styles */
@@ -82,16 +90,48 @@
   font-size: 1rem;
   font-weight: 400;
 }
-.banner-img{
-    width: 100%;
+.banner-img {
+  width: 100%;
 }
 
+/* -------------------------------------------Main Style */
 
+/* ---------------------------------------teams Style */
+.teams {
+  align-items: center;
+  justify-content: space-around;
+  gap: 73px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
- /* ----------------------------------Responsive media  query */
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
 
-@media screen and (max-width:576px) {
-    .navbar,.nav-link{
-        flex-direction: column;
-    }
+.our-features {
+  max-width: 530px;
+}
+.feature-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+#last-title{
+    color: rgb(255, 144, 14);
+}
+
+.Feature-description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* ----------------------------------Responsive media  query */
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-link {
+    flex-direction: column;
+  }
 }
