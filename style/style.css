@@ -31,6 +31,14 @@
   font-weight: 600;
   padding: 20px 24px;
 }
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.section-description {
+  font-size: 1rem;
+  font-weight: 400;
+}
 
 main {
   max-width: 1440px;
@@ -114,18 +122,12 @@ main > section {
 .our-features {
   max-width: 530px;
 }
-.feature-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-}
+
 #last-title{
     color: rgb(255, 144, 14);
 }
 
-.Feature-description {
-  font-size: 1rem;
-  font-weight: 400;
-}
+/* -----------------------------------Some Facts Styles */
 
 /* ----------------------------------Responsive media  query */
 
@@ -134,4 +136,21 @@ main > section {
   .nav-link {
     flex-direction: column;
   }
+  .teams{
+    flex-direction: column-reverse;
+  }
+  .team-img-container{
+    grid-template-columns: 1fr;
+  }
+  .our-features{
+    margin-left: 20px;
+  }
 }
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+  .teams{
+    flex-direction: column-reverse;
+  }
+}
+
+
